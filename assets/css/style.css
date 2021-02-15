@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     background-color: #0E1630;
     color: #808DAD;
 }
-
+.navbar-brand{
+    font-weight: 900;
+    font-size: 20px;
+}
 .nav-link {
     color: #808DAD;
     position: relative;
-    padding: 5px 0px;
-    margin: 0px 11px;
+    padding: 7px 0px;
+    margin: 0px 10px;
     font-size: 14px;
 }
 
