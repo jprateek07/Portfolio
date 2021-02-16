@@ -30,6 +30,9 @@ body {
     background-color: #EB4A4A;
 }
 
+.primary-font-color{
+    color: #808DAD;
+}
 .secondary-font-color {
     color: #EB4A4A;
 }
@@ -45,4 +48,157 @@ body {
 
 .nav-link-underline:hover::before {
     width: 70%;
+}
+
+/* Landing page */
+.landing-page{
+    height: 67vh;
+    position: relative;
+    margin-top: 100px;
+}
+.landing-page-left-section{
+    margin: auto;
+}
+.dash-line{
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.landing-page-left-section h6::before {
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid #EB4A4A;
+    width: 60px;
+    margin: 0 0.5rem;
+    border-radius: 10%;
+}
+.landing-page-left-section h1{
+    font-size: 4rem;
+}
+.landing-page-left-section button{
+    border-color: #EB4A4A;
+}
+.landing-page-left-section button:hover{
+    border-color: #808DAD;
+    color: #808DAD;
+}
+.landing-page-left-section .btn{
+    border-color: #EB4A4A;
+}
+.download-btn{
+    border: none;
+}
+.download-btn:hover{
+    color: #808DAD;
+}
+.user-image-section{
+    height: 100%;
+    width: 100%;
+}
+.user-image{
+    width: 70%;
+    height: 100%;
+    background-image: url('../images/DisplayPicture.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 60px 2px 2px 60px;
+}
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+.effect-1{
+    height: 24px;
+    width: 24px;
+    border: 2px solid #EB4A4A ;
+    border-radius: 50%;
+    right: 48%;
+    animation: animate 4s infinite;
+}
+
+.effect-2{
+    height: 14px;
+    width: 14px;
+    border: 2px solid #808DAD ;
+    border-radius: 50%;
+    right: 44%;
+    top: 7%;
+    animation: animate 5s infinite;
+}
+.effect-3{
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: -10%;
+    left: 17%;
+    position: relative;
+    opacity: 0.3;
+}
+.effect-3::before{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #EB4A4A;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.effect-3 div{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #808DAD;
+    border-radius: 50%;
+}
+.skill-container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+    width: 13%;
+    opacity: 0.3;
+    border-radius: 20%;
+    box-shadow: 4px 6px 26px -4px rgba(0,0,0,0.75);
+}
+.effect-4 img{
+    height: 40px;
+    width: 40px;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* Landing page ends */
+
+/* media query starts */
+@media screen and (max-width:767px)
+{
+    .user-image{
+        height: 50vh;
+        border-radius: 20%;
+    }
 }
