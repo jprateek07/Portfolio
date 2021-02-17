@@ -56,7 +56,7 @@ body {
 
 /* Landing page */
 .landing-page {
-    height: 67vh;
+    min-height: 67vh;
     position: relative;
     margin-top: 100px;
 }
@@ -210,7 +210,18 @@ body {
     border-radius: 50%;
     opacity: 0.2;
 }
-
+.effect-7 {
+    height: 40px;
+    width: 40px;
+    border: 8px solid #808DAD;
+    border-radius: 5%;
+    right: 0%;
+    top: 0%;
+    animation: RotatingDiv 30s infinite linear;
+}
+.about-left-section .effect{
+    opacity: 0.1;
+}
 .skill-container {
     position: absolute;
     top: 17%;
@@ -312,7 +323,56 @@ body {
     color: white;
     font-size: 20px;
 }
-
+/* About section */
+/* .work{
+    height: 50px;
+    width: 50px;
+} */
+.work{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 4px 6px 26px -4px rgba(0, 0, 0, 0.75);
+}
+.work-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.work-1{
+    border-radius: 5% 5% 20% 20%;
+}
+.work-2{    
+    border-radius: 20% 20% 5% 5%;
+}
+.work-3{
+    border-radius: 20% 5% 20% 5%;
+}
+.about-right-section p::before{
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid #EB4A4A;
+    width: 40px;
+    margin: 0 0.5rem;
+    border-radius: 10%;
+    transform: translateY(-3px);
+}
+.about-me-left-section p::before{
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid #EB4A4A;
+    width: 40px;
+    margin: 0 0.5rem;
+    border-radius: 10%;
+    transform: translateY(-3px);
+}
+.about-me-left-section button {
+    border-color: #EB4A4A;
+}
+.about-me-left-section button:hover {
+    border-color: #808DAD;
+    color: #808DAD;
+}
+/*About section end  */
 @keyframes animate {
     0% {
         transform: translateY(0px);
