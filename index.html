@@ -192,10 +192,11 @@
             </div>
         </div>
     </div>
+    <!-- about me section -->
     <div class="container about-me-section my-md-5 my-5">
         <div class="row">
             <div class="col-md-6 about-me-left-section my-auto">
-                <p class="secondary-font-color"><span class="dash"></span>About me</p>
+                <p class="secondary-font-color"></span>About me</p>
                 <h3 class="text-white font-weight-bolder">Hi, Im here<br>to help your next project</h3>
                 <h6 class="primary-font-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero
                     dolores hic non voluptate recusandae dolor maxime, modi eligendi laborum nesciunt officiis
@@ -259,7 +260,8 @@
             </div>
         </div>
     </div>
-    <div class="container portfolio-section my-5 my-md-5">
+    <!-- portfolio section -->
+    <!-- <div class="container portfolio-section my-5 my-md-5">
         <p class="secondary-font-color font-weight-bolder dash">My portfolio</p>
         <div class="row">
             <div class="col-md-6">
@@ -282,16 +284,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="portfolio-cards">
+                                <div class="portfolio-cards p-md-3">
                                     <h6 class="secondary-font-color">Web UI-Ux Design</h6>
                                     <p>Web UI-Ux Design  Web UI-Ux Design  Web UI-Ux Design</p>
-                                    <div class="button-container d-flex justify-content-between">
+                                    <div class="button-container d-flex m-auto">
                                         <button class="btn primary-font-color">Web</button>
-                                        <button class="btn primary-font-color">Web</button>
-                                        <button class="btn primary-font-color">Web UI--UX</button>
+                                        <button class="btn primary-font-color ml-2 ml-md-2">Web</button>
+                                        <button class="btn primary-font-color ml-2 ml-md-2">Web UI-UX</button>
                                     </div>
                                     
-                                    <div class="text-center"><img src="assets/images/portfolio-1.jpg" alt=""></div>
+                                    <div class="text-center p"><img src="assets/images/portfolio-1.jpg" alt=""></div>
                                 </div>
                             </div>
                             <div class="col-md-4"></div>
@@ -304,7 +306,100 @@
               </div>
         </div>
     </div>
-    <!-- About section -->
+    </div> -->
+    <!-- client section -->
+    <div class="container client-section">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="effect-wrap">
+                    <div class="effect image-1"></div>
+                    <div class="effect image-2"></div>
+                    <div class="effect image-3"></div>
+                    <div class="effect image-4"></div>
+                    <div class="effect image-5"></div>
+                    <div class="effect image-6"></div>
+                </div>
+                <div class="circle m-auto">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="secondary-font-color"><span class="dash">Testimonials</span></p>
+                <h3 class="font-weight-bolder text-white">WHAT OUR CLIENT SAY</h3>
+            </div>
+        </div>
+    </div>
+    <!-- jquery counter -->
+    <section id="circleBar" onload="Circlle('.round');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="round" data-value="0.87" data-size="200" data-thickness="6">
+                        <strong></strong>
+                        <span>HTML Skill</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="round" data-value="0.74" data-size="200" data-thickness="6">
+                        <strong></strong>
+                        <span> CSS Skill</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="round" data-value="0.65" data-size="200" data-thickness="6">
+                        <strong></strong>
+                        <span> JavaScript Skill</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="round" data-value="0.95" data-size="200" data-thickness="6">
+                        <strong></strong>
+                        <span>Bootstrap Skill</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jquery counter end -->
+    <div class="container my-5 my-md-5">
+        <div class="row">
+            <div class="col-md-6 contact-details">
+                <p class="secondary-font-color font-weight-bolder"><span class="dash"></span>Contact Me</p>
+                <h4 class="text-white">Let's work together</h4>
+                <p class="mb-4 mb-md-5 mt-md-3 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                    corporis aperiam sapiente facilis ipsum adipisci</p>
+                <div class="user-details d-flex mt-3 mt-md-3">
+                    <img src="assets/images/contact-us/location.png" alt="">
+                    <p>Udaipur-rajasthan-India</p>
+                </div>
+                <div class="user-details d-flex mt-3 mt-md-3">
+                    <img src="assets/images/contact-us/mail.png" alt="">
+                    <p>prateek@gmail.com</p>
+                </div>
+                <div class="user-details d-flex mt-3 mt-md-3">
+                    <img src="assets/images/contact-us/telephone.png" alt="">
+                    <p>+91-987654321</p>
+                </div>
+            </div>
+            <div class="col-md-6 contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control transparent-input" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control transparent-input" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control transparent-input" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control transparent-input message-field" placeholder="Message">
+                    </div>
+                    <button type="submit" class="btn secondary-font-color">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
